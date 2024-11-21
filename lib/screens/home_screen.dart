@@ -26,11 +26,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Image.network(
-            (character.urlImage != null)
-                ? character.urlImage!
-                : UrlConstants.hero,
-            width: 300,
+          Center(
+            child: Image.network(
+              (character.urlImage != null)
+                  ? character.urlImage!
+                  : UrlConstants.hero,
+              width: 300,
+            ),
           ),
         ],
       ),

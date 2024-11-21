@@ -6,7 +6,7 @@ Character getMyCharacter() {
     level: 6,
     hitPoints: 44,
     manaPoints: 6,
-    isAlive: true,
+    isAlive: false,
     listAllies: ["Mithra", "Magnus Victor", "Nabis"],
     player: "Victor Hugo",
     createdAt: DateTime.parse("2024-03-02"),

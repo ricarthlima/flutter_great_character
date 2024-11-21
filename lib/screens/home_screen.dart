@@ -54,6 +54,14 @@ class HomeScreen extends StatelessWidget {
               title: "Vida:",
               value: "${character.hitPoints}/${character.level * 10}",
             ),
+            ListItem(
+              title: "Mana:",
+              value: "${character.manaPoints}/${character.level * 2}",
+            ),
+            ListItem(
+              title: "Status:",
+              value: (character.isAlive) ? "🩷" : "💀",
+            ),
           ],
         ),
       ),

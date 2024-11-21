@@ -34,6 +34,13 @@ class HomeScreen extends StatelessWidget {
               width: 300,
             ),
           ),
+          Text(
+            character.name,
+            style: const TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ],
       ),
     );

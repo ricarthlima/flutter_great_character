@@ -2,7 +2,7 @@ import '../models/character.dart';
 
 Character getMyCharacter() {
   return Character(
-    name: "Viper",
+    name: "Viper Forteaço",
     level: 6,
     hitPoints: 44,
     manaPoints: 6,

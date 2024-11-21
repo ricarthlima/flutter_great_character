@@ -45,6 +45,10 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Text(
+              "Por ${character.player}, criado em ${character.createdAt.toString().substring(0, 10)}.",
+              style: const TextStyle(fontStyle: FontStyle.italic),
+            ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Divider(),

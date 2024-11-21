@@ -50,6 +50,10 @@ class HomeScreen extends StatelessWidget {
               child: Divider(),
             ),
             ListItem(title: "Nível:", value: character.level.toString()),
+            ListItem(
+              title: "Vida:",
+              value: "${character.hitPoints}/${character.level * 10}",
+            ),
           ],
         ),
       ),

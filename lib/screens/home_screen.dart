@@ -26,29 +26,32 @@ class HomeScreen extends StatelessWidget {
         shadowColor: Colors.black,
         elevation: 7,
       ),
-      body: Column(
-        children: [
-          Center(
-            child: Image.network(
-              (character.urlImage != null)
-                  ? character.urlImage!
-                  : UrlConstants.hero,
-              width: 300,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          children: [
+            Center(
+              child: Image.network(
+                (character.urlImage != null)
+                    ? character.urlImage!
+                    : UrlConstants.hero,
+                width: 300,
+              ),
             ),
-          ),
-          Text(
-            character.name,
-            style: GoogleFonts.seaweedScript(
-              fontSize: 64,
-              fontWeight: FontWeight.bold,
+            Text(
+              character.name,
+              style: GoogleFonts.seaweedScript(
+                fontSize: 64,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Divider(),
-          ),
-          ListItem(title: "Nível:", value: character.level.toString()),
-        ],
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 16.0),
+              child: Divider(),
+            ),
+            ListItem(title: "Nível:", value: character.level.toString()),
+          ],
+        ),
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_great_character/data/my_character.dart';
 import 'package:flutter_great_character/data/url_constants.dart';
 import 'package:flutter_great_character/models/character.dart';
+import 'package:flutter_great_character/widgets/list_item.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -46,6 +47,7 @@ class HomeScreen extends StatelessWidget {
             padding: EdgeInsets.all(16.0),
             child: Divider(),
           ),
+          ListItem(title: "Nível:", value: character.level.toString()),
         ],
       ),
     );

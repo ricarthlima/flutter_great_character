@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_great_character/data/my_character.dart';
 import 'package:flutter_great_character/data/url_constants.dart';
 import 'package:flutter_great_character/models/character.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -36,8 +37,8 @@ class HomeScreen extends StatelessWidget {
           ),
           Text(
             character.name,
-            style: const TextStyle(
-              fontSize: 32,
+            style: GoogleFonts.seaweedScript(
+              fontSize: 64,
               fontWeight: FontWeight.bold,
             ),
           ),

@@ -16,6 +16,7 @@ class ListItem extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Text(
             title,

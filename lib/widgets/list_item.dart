@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ListItem extends StatelessWidget {
   final String title;
@@ -16,10 +17,16 @@ class ListItem extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+          style: GoogleFonts.merriweather(
+            fontWeight: FontWeight.w900,
+            fontSize: 20,
+          ),
         ),
         const SizedBox(width: 8),
-        Text(value),
+        Text(
+          value,
+          style: GoogleFonts.merriweather(fontSize: 18),
+        ),
       ],
     );
   }

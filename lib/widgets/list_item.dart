@@ -13,21 +13,24 @@ class ListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          title,
-          style: GoogleFonts.merriweather(
-            fontWeight: FontWeight.w900,
-            fontSize: 20,
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      child: Row(
+        children: [
+          Text(
+            title,
+            style: GoogleFonts.merriweather(
+              fontWeight: FontWeight.w900,
+              fontSize: 20,
+            ),
           ),
-        ),
-        const SizedBox(width: 8),
-        Text(
-          value,
-          style: GoogleFonts.merriweather(fontSize: 18),
-        ),
-      ],
+          const SizedBox(width: 8),
+          Text(
+            value,
+            style: GoogleFonts.merriweather(fontSize: 18),
+          ),
+        ],
+      ),
     );
   }
 }
